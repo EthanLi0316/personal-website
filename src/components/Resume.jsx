@@ -78,7 +78,7 @@ function Resume() {
 						<h3>
 							<span className="project-title">
 								<a
-									href="https://recipe-generator-gemini.vercel.app"
+									href="https://chef-gemini.netlify.app/"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -88,17 +88,21 @@ function Resume() {
 								</a>
 								{" | React, Google Gemini API, CSS"}
 							</span>
-							<span className="project-date">Mar 2024</span>
+							<span className="project-date">Dec 2024</span>
 						</h3>
 						<ul>
 							<li>
-								Developed an AI-powered recipe generator that
-								creates unique recipes based on available
-								ingredients using React and Google's Gemini AI.
+								Developed an <strong>AI</strong>-powered recipe
+								generator that creates unique recipes based on
+								available ingredients using{" "}
+								<strong>React</strong> and{" "}
+								<strong>Google Gemini AI</strong>.
 							</li>
 							<li>
-								Implemented real-time ingredient management and
-								recipe generation with modern React practices.
+								Implemented <strong>real-time</strong> and{" "}
+								<strong>responsive</strong> ingredient
+								management website and recipe generation with
+								modern <strong>React</strong> practices.
 							</li>
 						</ul>
 					</div>
@@ -107,7 +111,7 @@ function Resume() {
 						<h3>
 							<span className="project-title">
 								<a
-									href="https://github.com/EthanLi0316/python-crawler"
+									href="https://github.com/EthanLi0316/python-web-crawler"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -121,15 +125,50 @@ function Resume() {
 						</h3>
 						<ul>
 							<li>
-								Engineered a Python-based web crawler focused on
-								minimizing runtime complexity, leveraging os and
-								Json modules for efficient data handling and
-								reduced I/O operations.
+								Engineered a <strong>Python</strong>-based web
+								crawler focused on{" "}
+								<strong>minimizing runtime complexity</strong>,
+								leveraging os and Json modules for efficient
+								data handling and reduced I/O operations.
 							</li>
 							<li>
 								Enhanced search efficiency through preprocessing
-								for word frequency analysis and PageRank
-								algorithm optimizations.
+								for word frequency analysis and{" "}
+								<strong>PageRank algorithm</strong>{" "}
+								optimizations.
+							</li>
+						</ul>
+					</div>
+
+					<div className="project">
+						<h3>
+							<span className="project-title">
+								<a
+									href="https://github.com/EthanLi0316/java-web-crawler"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<strong>Java Web Crawler</strong>
+								</a>
+								{" | Java, JavaFX"}
+							</span>
+							<span className="project-date">
+								Sept 2023 – Dec 2023
+							</span>
+						</h3>
+						<ul>
+							<li>
+								Translated a Python web crawler into{" "}
+								<strong>Java</strong>, adding a user-friendly{" "}
+								<strong>GUI</strong> with{" "}
+								<strong>JavaFX</strong>.
+							</li>
+							<li>
+								Improved <strong>data storage</strong> using{" "}
+								<strong>Java serialization</strong> and
+								addressed a{" "}
+								<strong>circular-reference problem</strong> by
+								optimizing object compositions.
 							</li>
 						</ul>
 					</div>

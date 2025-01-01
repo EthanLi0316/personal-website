@@ -58,13 +58,14 @@ function Projects() {
 			image: enchantedParticles,
 			links: {
 				github: "https://github.com/Cyronite/HackTheHill",
-				// No live link provided
+				demo: "https://devpost.com/software/entropy-2",
 			},
 		},
 		{
 			title: "Byzantine Color Palette",
 			type: "Personal Project",
 			date: "Dec 2024",
+
 			tech: "React, CSS",
 			description:
 				"A color palette generator inspired by Byzantine art, allowing users to create and save custom color schemes. Features include color harmony rules and exportable palettes.",

@@ -19,15 +19,20 @@ Ottawa, Ontario
 -   Implemented a Python script to convert RGB images to a 10-bit YCbCr format for **image processing compatibility** with the **FPGA**.
 -   Developed a **Verilog** module to determine **point inclusion** within a square, which provides color and state flags for **particle rendering**.
 
-**Recipe Generator with Gemini** | React, Google Gemini API, CSS <div style="float: right">**Mar 2024**</div>
+**Recipe Generator with Gemini** | React, Google Gemini API, CSS <div style="float: right">**Dec 2024**</div>
 
--   Developed an AI-powered recipe generator that creates unique recipes based on available ingredients using React and Google's Gemini AI.
--   Implemented real-time ingredient management and recipe generation with modern React practices.
+-   Developed an **AI**-powered recipe generator that creates unique recipes based on available ingredients using **React** and **Google Gemini AI**.
+-   •	Implemented **real-time** and **responsive** ingredient management website and recipe generation with modern **React** practices.
 
 **Python Web Crawler** | Python <div style="float: right">**Sept 2023 – Dec 2023**</div>
 
--   Engineered a Python-based web crawler focused on minimizing runtime complexity, leveraging os and Json modules for efficient data handling and reduced I/O operations.
--   Enhanced search efficiency through preprocessing for word frequency analysis and PageRank algorithm optimizations.
+-   Engineered a **Python**-based web crawler focused on **minimizing runtime complexity**, leveraging os and Json modules for efficient data handling and reduced I/O operations.
+-   Enhanced search efficiency through preprocessing for word frequency analysis and **PageRank algorithm** optimizations.
+
+**Java Web Crawler** | Java, JavaFX				<div style="float: right">**Sept 2023 – Dec 2023**</div>
+•	Translated a Python web crawler into **Java**, adding a user-friendly **GUI** with **JavaFX**.
+•	Improved **data storage** using **Java serialization** and **addressed** a **circular-reference problem** by **optimizing object compositions**.
+
 
 ## EXTRA-CURRICULAR ACTIVITIES
 
