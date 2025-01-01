@@ -1,0 +1,226 @@
+<!--
+Name: Jiayi Li
+Date: Date 23/03/01
+Section: CST 8285 section 310
+Lab: Assignment 1
+File: resume.html
+Lab objective: a resume website
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--metadata of the website-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jiayi Li">
+        <title>Resume</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    </head>
+    <body>
+        <!--navbar of the website. its color is transparent and it has one brand: Jiayi and three items: home, resume, and courses. Brand and home will direct to the 
+        index.html page resume is to resume.html and courses is to courses.html. Resume is a droplist, by cliking it, it will show up a list composed of liks on that page
+        so that users can easily open liks while staying on the currnet page. -->
+        <header>              
+            <nav class="navbar sticky-top navbar-expand-lg bg-transparent mb-2 mx-2">
+                <div  class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toBeCollapsed">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--brand name of the navbar-->
+                    <div class="collapse navbar-collapse mt-2" id="toBeCollapsed">
+                      <a class="navbar-brand" href="./index.html">Jiayi Li</a>
+                      <ul class="navbar-nav me-auto mx-2">
+                        <!--the first item on navbar-->
+                        <li class="nav-item">
+                          <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+
+                        <!--the second item with a dropdown list on navbar-->
+                        <!--dropdown list starts-->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown">Resume</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./resume.html">Resume Page</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.algonquincollege.com/">Algonquin College</a></li>
+                            <li><a class="dropdown-item" href="https://www.algonquincollege.com/sat/program/computer-programming/">Computer Programming Program</a></li>
+                            <li><a class="dropdown-item" href="https://www.algonquincollege.com/coop/coop-entry/computer-engineering-technology-computing-science/">Computer Engineering Technology Program</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../Lab3/lab3-bootstrap/Lab3.html">Lab Work 1</a></li>
+                            <li><a class="dropdown-item" href="../Lab4/inspiration.html">Lab Work 2</a></li>
+                          </ul>
+                        </li>
+                        <!--dropdown list ends-->
+
+                        <!--the third item on navbar-->
+                        <li class="nav-item">
+                          <a class="nav-link" href="./courses.html">Courses</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--start of the resume presentation-->
+            <div class="container py-1">
+                <!--show my education-->
+                <h2 class="pb-3 border-bottom mb-3">
+                    Education
+                </h2>
+                <div class="container mx-1">
+                    <h3 class="lead">Algonquin College Ottawa, ON</h3>
+                    <ul>
+                        <li>
+                            2023 01 - Present
+                            <ul>
+                                <li>
+                                    <!--the link is directed to the program webpage -->
+                                    <a href="https://www.algonquincollege.com/sat/program/computer-programming/">Computer Programming</a>
+                                    <ul>
+                                        <li>Dean’s Honors List</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            2022 09 – 2022 12
+                            <ul>
+                                <li>
+                                    <!--the link is directed to the program webpage -->
+                                    <a href="https://www.algonquincollege.com/coop/coop-entry/computer-engineering-technology-computing-science/">Computer Engineering Technology</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--show my Experience-->
+                <h2 class="pb-3 border-bottom mb-3">
+                    Experience
+                </h2>
+                <div class="container mx-1">
+                    <h3 class="lead">McDonald’s Crew Member, two years (2020 – 2022)</h3>
+                    <!--show a list of the experience and skills at McDonalts-->
+                    <ul>
+                        <li>
+                            Attention to Detail
+                            <ul>
+                                <li>Made burgers that finished by correct steps. </li>
+                                <li>Made meats that are enough for 30 mins. </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Teamwork
+                            <ul>
+                                <li>Worked with members with different responsibilities include preparation, cooking and cleaning. </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Oral communication skills
+                            <ul>
+                                <li>Spoke with members to discuss everyone’s job to work efficiently. </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Written Communication Skills:
+                            <ul>
+                                <li>Wrote emails to the managers to discuss potential improvement during the job process. </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--show my Skills-->
+                <h2 class="pb-3 border-bottom mb-3">
+                    Skills
+                </h2>
+                <div class="container mx-1">
+                    <h3 class="lead">Written Communication Skills:</h3>
+                    <ul>
+                        <li>Perform professional writing for various college studies. </li>
+                        <li>Develop clear, concrete, and persuasive writing style. </li>
+                        <li>Write professional memos and emails to keep the communications smooth and effective for completing English assignments.</li>
+                    </ul>
+                    <h3 class="lead">Oral communication skills:</h3>
+                    <ul>
+                        <li>Perform an empathic listener and persuasive speaker during presentation session in College. </li>
+                        <li>Develop confident and professional speaking abilities. </li>
+                        <li>Perform clear and effective speaking for taking part in the group project of building promotional pages. </li>
+                    </ul>
+                    <h3 class="lead">Teamwork:</h3>
+                    <ul>
+                        <li>Work with group of people to perform efficiently on the job. </li>
+                    </ul>
+                    <h3 class="lead">Attention to Detail:</h3>
+                    <ul>
+                        <li>Develop working skill to focus on details on the job. </li>
+                    </ul>
+                </div>
+                <h2 class="pb-3 border-bottom mb-3">
+                    Goal
+                </h2>
+                <div class="container mx-1">
+                    <p>My goal is to become a programming expert to make big projects and solve problems in the computer programming industry. </p>
+                </div>
+                <h2 class="pb-3 border-bottom mb-3">
+                    Objectives
+                </h2>
+                <div class="container mx-1">
+                    <p>
+                        To secure a job as a web developer in a fast-paced startup environment, where I can leverage my skills in HTML, CSS, JavaScript, and UI/UX design to build intuitive and user-friendly web applications that drive business growth.
+                    </p>
+                </div>
+                <h2 class="pb-3 border-bottom mb-3">
+                    My lab works:
+                </h2>
+                <!--The container contains two card components that is awailable in the bootstrap css library, 
+                    to show my lab works during acdemics. -->
+                <div class="container mx-1">
+
+                    <div class="card lab-works my-4">
+                        <a target="_blank" href="../image/lab3-tumbnail.png">
+                            <img src="../image/lab3-tumbnail.png" class="card-img-top thumbnail" alt="lab3 thumbnail">
+                        </a>
+                        <div class="card-body">
+                            <a target="_blank" href="../lab3/lab3-bootstrap/lab3.html">
+                                <h5 class="card-title">Lab Work 1</h5>
+                            </a>
+                            <p class="card-text">This is a beautiful website built by using Bootstrap CSS library.</p>
+                        </div>
+                    </div>
+
+                    <div class="card lab-works my-4">
+                        <a target="_blank" href="../image/lab4-tumbnail.png">
+                            <img src="../image/lab4-tumbnail.png" class="card-img-top thumbnail" alt="lab4 thumbnail">
+                        </a>
+                        <div class="card-body">
+                            <a target="_blank" href="../lab4/inspiration.html">
+                                <h5 class="card-title">Lab Work 2</h5>
+                            </a>
+                            <p class="card-text">This is a simple inspirational quote generator that will use a provided an array data structure full of inspirational quotes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--a simple footer at the bottom of the page. -->
+      <footer class="mt-5">
+
+        <nav>
+            <a id="topper" href="#top">
+              Top of Article
+            </a>
+        </nav>
+
+        <p class="text-center">Personal page of Jiayi Li.</p>
+
+      </footer>
+    </body>
+</html>
+<!--end of the page. -->

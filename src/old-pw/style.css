@@ -1,0 +1,69 @@
+/*
+Name: Jiayi Li
+Date: Date 23/03/01
+Section: CST 8285 section 310
+Lab: Assignment 1
+File: style.css
+Lab objective: a resume website
+*/
+
+/*set the font and bottom pading for all pages*/
+main{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 50px; 
+}
+
+/*set the image of the two cards at the resume page to turn blue shadow on when the pointer is over them. */
+img.thumbnail:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/*set the format for my own photo at the index(home) page. */
+#Jiayi{
+  width: 18%;
+  margin-right: 20px;
+  float: left;
+  height: auto;
+}
+
+/*set the format for the button at the foorer of all the pages. */
+#topper{
+  border:solid black 2px;
+  border-radius: 20px;
+  margin:10px;
+  padding:7px;
+  text-decoration: none;
+  color:black;
+}
+
+/*set format for all the secondary titles of all pages. */
+h3{
+  font-size: 16px;
+}
+
+/*to center the two cards at the resume page*/
+.lab-works{
+  margin:auto;
+  max-width: 540px;
+}
+
+/*limit the width and center the search bar at the courses page*/
+#Search-courses{
+  max-width: 70%; 
+  margin:auto;
+}
+
+/*limit the width and center the droplist of the sort tool at the courses page*/
+#sort{
+  max-width: 20%; 
+  margin:auto;
+}
+
+/*limit the width of the course cards at the courses page. */
+.level2-course, .level1-course{
+  max-width: 600px;
+} 
+
+br{
+  margin:80px;
+}

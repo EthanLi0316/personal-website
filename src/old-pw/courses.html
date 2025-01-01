@@ -1,0 +1,285 @@
+<!--
+Name: Jiayi Li
+Date: Date 23/03/01
+Section: CST 8285 section 310
+Lab: Assignment 1
+File: courses.html
+Lab objective: a resume website
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--metadata of the website-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jiayi Li">
+        <title>Courses</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="script.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+    </head>
+    <body>
+        <!--navbar of the website. its color is transparent and it has one brand: Jiayi and three items: home, resume, and courses. Brand and home will direct to the 
+        index.html page resume is to resume.html and courses is to courses.html. Resume is a droplist, by cliking it, it will show up a list composed of liks on that page
+        so that users can easily open liks while staying on the currnet page. -->
+        <header>              
+            <nav class="navbar sticky-top navbar-expand-lg bg-transparent mb-2 mx-2">
+                <div  class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toBeCollapsed">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--brand name of the navbar-->
+                    <div class="collapse navbar-collapse mt-2" id="toBeCollapsed">
+                      <a class="navbar-brand" href="./index.html">Jiayi Li</a>
+                      <ul class="navbar-nav me-auto mx-2">
+                        <!--the first item on navbar-->
+                        <li class="nav-item">
+                          <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+
+                        <!--the second item with a dropdown list on navbar-->
+                        <!--dropdown list starts-->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Resume</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./resume.html">Resume Page</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.algonquincollege.com/">Algonquin College</a></li>
+                            <li><a class="dropdown-item" href="https://www.algonquincollege.com/sat/program/computer-programming/">Computer Programming Program</a></li>
+                            <li><a class="dropdown-item" href="https://www.algonquincollege.com/coop/coop-entry/computer-engineering-technology-computing-science/">Computer Engineering Technology Program</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="../Lab3/lab3-bootstrap/Lab3.html">Lab Work 1</a></li>
+                            <li><a class="dropdown-item" href="../Lab4/inspiration.html">Lab Work 2</a></li>
+                          </ul>
+                        </li>
+                        <!--dropdown list ends-->
+
+                        <!--the third item on navbar-->
+                        <li class="nav-item">
+                          <a class="nav-link active" href="./courses.html">Courses</a>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--nav bar component ends-->
+
+        <main>
+
+            <!--Container contains the title of the page-->
+            <div class="container py-1">
+                <h2 class="pb-3 border-bottom mb-3">
+                    Information about my curriculum
+                </h2>
+            </div>
+
+            <!--a container contains the page tools, such as search bar, course level filter, course level sorter. -->
+            <div class="container text-center py-1 mx-5">
+
+                <!--search bar component-->
+                <form onsubmit="return false">
+                    <label for="Search" class="mb-2">Search Courses:</label>
+                    <div class="input-group search-form" id="Search-courses">
+                        <input type="search" id="Search" class="Search-field form-control" placeholder="Search Courses...">
+                        <button class="btn btn-outline-primary" id="search-button" type="button">search</button>
+                        <button class="btn btn-outline-primary" id="clear-button" type="button">clear results</button>
+                    </div>
+                </form>
+
+                <!--filter component-->
+                <form>
+                    <label for="level1" class="mx-5 d-block my-3">Filter courses by levels:</label>
+                    <div class="btn-group-vertical" role="group">
+                        <input type="checkbox" class="btn-check" id="level1" name="level1" checked>
+                        <label class="btn btn-outline-primary" for="level1">Level 1</label>
+
+                        <input type="checkbox" class="btn-check" id="level2" name="level2" checked>
+                        <label class="btn btn-outline-primary" for="level2">Level 2</label>
+
+                        <button id="filter-button" type="button" class="btn btn-outline-dark">filter</button>
+                    </div>
+                </form>
+                
+                <!--sorter component. -->
+                <form>
+                    <div class="mb-3 my-3">
+                        <label for="sort" class="mx-5 mb-2">Sort by levels:</label>
+                        <select class="form-select mb-3" id ="sort" name="sort">
+                            <option value="highest to lowest" selected>highest to lowest</option>
+                            <option value="lowest to highest">lowest to highest</option>
+                        </select>  
+                        <button id="sort-button" type="button" class="btn btn-outline-primary">sort</button>
+                    </div>
+                </form>
+            </div>   
+
+            <!--The container contains a bunch of cards components that is awailable in the bootstrap css library, 
+                    to show all my past and current courses at Algonquin College.
+                    the text is at top while the image is at bottom. -->
+            <section class="bg-body-secondary mt-5 py-3">
+                <div class="container py-1">
+                    <div id="parent">
+                        <div class="courses level2-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    CST2355 Database
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 2
+                                </h6>
+                                <p class="card-text">
+                                    Database concepts covered include advanced SQL, case structures, rollup and cube operations, metadata manipulation, data storage and retrieval, security and transaction control and data warehousing. 
+                                </p>
+                            </div>
+                            <img src="../image/cst2355.png" alt="CST2355" class="course-image card-img-bottom">
+                        </div>
+                        <div class="courses level2-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    GEP1001 Cooperative Education.
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 2
+                                </h6>
+                                <p class="card-text">
+                                    Through a detailed orientation, students learn the cooperative education program policies and procedures related to searching and 
+                                    securing a work term opportunity.
+                                </p>
+                            </div>
+                            <img src="../image/gep1001.png" alt="GEP1001" class="course-image card-img-bottom">
+                        </div>
+                        <div class="courses level2-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    CST8285 Web Programming
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 2
+                                </h6>
+                                <p class="card-text">
+                                    Students develop basic skills of web programming, website design and implementation. JavaScript, HTML5, and PHP are used to explore web-based solutions to problems of increasing interactivity and complexity. 
+                                </p>
+                            </div>
+                            <img src="../image/cst8285.jpg" alt="CST8285" class="course-image card-img-bottom">
+                        </div>
+                        <div class="courses level2-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    CST8284 Object Oriented Programming (Java)
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 2
+                                </h6>
+                                <p class="card-text">
+                                    Students explore object-oriented programming methodology using the Java programming language. Object oriented concepts, such as encapsulation, inheritance, abstraction and polymorphism are covered and reinforced with practical applications.
+                                </p>
+                            </div>
+                            <img src="../image/cst8284.jpg" alt="CST8284" class="course-image card-img-bottom">
+                        </div>
+                        <div class="courses level2-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    CST8102 Operating Systems Fund (GNU/Linux)
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 2
+                                </h6>
+                                <p class="card-text">
+                                    Students explore the basic concepts and components of Operating Systems (OS), and how they function and interact with hardware and software components. Students examine the details of operating system structures, process management, storage management, installation, configuration, and administration both in theory and through practical assignments based on the GNU/Linux operating system. 
+                                </p>
+                            </div>
+                            <img src="../image/cst8102.jpg" alt="CST8102" class="course-image card-img-bottom">
+                        </div>
+                        <!--Level 1 courses↓-->
+                        <div class="courses level1-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    MAT8001 Tech Math for Computer Science
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 1
+                                </h6>
+                                <p class="card-text">
+                                    Students manipulate algebraic expressions, solve algebraic equations and linear systems and learn the properties of and graph algebraic and transcendental functions. Students investigate computer number systems in addition to Boolean algebra and logic to help solve problems involving computer systems. 
+                                </p>
+                            </div>
+                            <img src="../image/mat8001.jpg" alt="MAT8001" class="course-image card-img-bottom">
+                        </div>
+                        <div class="courses level1-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    CST8300 Achieving Success in Changing Environment
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 1
+                                </h6>
+                                <p class="card-text">
+                                    Students explore the possibilities ahead, assess their own aptitudes and strengths, and apply critical thinking and decision-making tools to help resolve some of the important issues in our complex society with its competing interests.
+                                </p>
+                            </div>    
+                            <img src="../image/cst8300.png" alt="CST8300" class="course-image card-img-bottom">
+                        </div>
+                        <div class="courses level1-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    CST8215 Introduction to Database
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 1
+                                </h6>
+                                <p class="card-text">
+                                    Students learn the fundamentals of relational databases design using Entity Relation Diagrams (ERDs), and use Structured Query Language (SQL) to create, modify and query a database. Students design and create databases that are maintainable, secure and adaptable to change in business requirements, using normalization. 
+                                </p>
+                            </div>    
+                            <img src="../image/cst8215.png" alt="CST8215" class="course-image card-img-bottom">
+                        </div>
+                        <div class="courses level1-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    CST8116 Introduction to Computer Programming
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 1
+                                </h6>
+                                <p class="card-text">
+                                    Students develop introductory knowledge of computer programming with emphasis on problem analysis and design, using algorithms, pseudocode, flowcharts, UML Class Diagrams and testing, with the Java programming language used as a means to implement problem solution designs. 
+                                </p>
+                            </div>
+                            <img src="../image/cst8116.png" alt="CST8116" class="course-image card-img-bottom">
+                        </div>
+                        <div class="courses level1-course card my-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    CST8101 Computer Essentials
+                                </h5>
+                                <h6 class="card-title lead">
+                                    level 1
+                                </h6>
+                                <p class="card-text">
+                                     Learn to configure your laptop environment, basic PC and troubleshoot problems. Students create backups, install virus protection, and manage files through a basic understanding of the Windows Operating System. Students also install and configure the Windows Operating System, and a virtual machine environment and explore computer organization including basic numerical systems, functional hardware and software components needed to run programs
+                                </p>
+                            </div>
+                            <img src="../image/cst8101.png" alt="CST8101" class="course-image card-img-bottom">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--a simple footer at the bottom of the page. -->
+      <footer class="mt-5">
+
+        <nav>
+            <a id="topper" href="#top">
+              Top of Article
+            </a>
+        </nav>
+
+        <p class="text-center">Personal page of Jiayi Li.</p>
+
+      </footer>
+    </body>
+</html>
+<!--end of the page. -->
