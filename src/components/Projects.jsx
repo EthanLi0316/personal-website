@@ -68,7 +68,7 @@ function Projects() {
 
 			tech: "React, CSS",
 			description:
-				"A color palette generator inspired by Byzantine art, allowing users to create and save custom color schemes. Features include color harmony rules and exportable palettes.",
+				"A color palette inspired by Byzantine art. It allows users to interact with Byzantine colors",
 			image: byzantineColorPalette,
 			links: {
 				github: "https://github.com/EthanLi0316/byzantine-color-palette",
@@ -81,7 +81,7 @@ function Projects() {
 			date: "Dec 2024",
 			tech: "React, CSS",
 			description:
-				"A responsive travel journal showcasing Canadian landmarks with interactive features. Features location-based entries with Google Maps integration and detailed descriptions of visited places.",
+				"A responsive travel journal showcasing Ottawa landmarks. Features location entries with Google Map links and descriptions of visited places.",
 			image: myTravelJournal,
 			links: {
 				github: "https://github.com/EthanLi0316/my-travel-journal",
