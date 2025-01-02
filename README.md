@@ -44,7 +44,7 @@ Ottawa, Ontario
 ## SKILLS
 
 **Programming Languages:** Python, C, C++, Java, JavaScript, PHP, SQL  
-**Technologies:** HTML, CSS, Bootstrap, MySQL  
+**Technologies:** React, HTML, CSS, Bootstrap, MySQL  
 **Development:** Linux, VS code, IntelliJ, Git
 
 ## WORK EXPERIENCE
